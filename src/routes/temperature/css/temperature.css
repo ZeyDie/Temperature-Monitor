@@ -1,0 +1,18 @@
+.sensors {
+    display: flex;
+}
+
+.description,
+.panel-alarm,
+.panel-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". .";
+    justify-items: center;
+}
+
+.panel-alarm {
+    margin-bottom: 20px;
+}

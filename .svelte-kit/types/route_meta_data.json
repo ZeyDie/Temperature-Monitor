@@ -1,0 +1,15 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/temperature": [
+		"src/routes/temperature/+layout.ts",
+		"src/routes/+layout.ts",
+		"src/routes/temperature/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/token": [
+		"src/routes/+layout.ts"
+	]
+}

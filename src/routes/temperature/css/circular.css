@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-container {
+    width: 80%;
+
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "."
+    ".";
+    justify-items: center;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.circular-container input {
+    width: 100%;
+    margin: 0px 30px;
+}
+
+.circular {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.circular .bar-right, .circular .bar-left {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.circle .bar .progress {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.content {
+    position: absolute;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+@media (prefers-color-scheme: light) {
+    .content {
+        background-color: rgb(200, 200, 200);
+    }
+
+    .circular {
+        box-shadow: 0 0px 5px rgba(15, 15, 15, 0.6);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .content {
+        background-color: rgb(15, 15, 15);
+    }
+
+    .circular {
+        box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+    }
+}

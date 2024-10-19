@@ -1,0 +1,43 @@
+{
+  "name": "temperature-monitor",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "tauri": "tauri"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mougli/circular-slider": "^1.0.0",
+    "@tauri-apps/api": ">=2.0.0",
+    "@tauri-apps/plugin-autostart": "^2.0.0",
+    "@tauri-apps/plugin-shell": ">=2.0.0",
+    "@types/node": "^22.7.5",
+    "axios": "^1.7.7",
+    "cyprobar": "^1.0.5",
+    "progresspiesvg": "^2.6.3",
+    "react-circular-progressbar": "^2.1.0",
+    "svelte-loader": "^3.2.3",
+    "svelte-routing": "^2.13.0",
+    "systeminformation": "^5.23.5",
+    "vite-node": "^2.1.2",
+    "vite-plugin-child-process": "^1.0.6"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.5",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@tsconfig/svelte": "^5.0.4",
+    "@types/node-fetch": "^2.6.11",
+    "svelte": "^4.2.19",
+    "svelte-check": "^4.0.4",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.9",
+    "vite-plugin-env-compatible": "^2.0.1"
+  }
+}
